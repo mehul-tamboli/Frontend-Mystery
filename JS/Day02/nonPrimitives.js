@@ -12,3 +12,5 @@ console.log(username);
 console.log(typeof username);
 
 console.log(username.firstName);
+
+console.log("isnew " + username.isLoggedin);
