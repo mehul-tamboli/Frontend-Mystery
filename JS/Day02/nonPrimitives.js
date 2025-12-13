@@ -15,7 +15,7 @@ console.log(username.firstName);
 
 console.log("isnew " + username.isLoggedin);
 
-
+//object can access by dot opreator to object name
 let student1 ={
     rollNo: 40,
     isPassed:true,
@@ -37,3 +37,11 @@ console.log(obj1['big color ']); //access for space variable using square bracke
 
 let today = new Date(); //date is object
 console.log(today.getDate);
+
+
+//Array-collection of things - access value by giving index value from from 0 ,like [0]
+
+
+let heros = ["batman","b","c",true,false];
+// console.log(heros[2]);
+
