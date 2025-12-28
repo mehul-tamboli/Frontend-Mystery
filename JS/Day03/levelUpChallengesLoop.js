@@ -36,16 +36,16 @@ for (let num of numbers) {
 // console.log(smallNumbers);
 
 //4]
-let teas = ["chai","green tea","herbal tea","black tea"];
+// let teas = ["chai","green tea","herbal tea","black tea"];
 
 let preferredTeas = [];
 
-for (let pick of teas) {
-    if(pick === "herbal tea"){
-        continue;//skip herbal tea
-    }
-    preferredTeas.push(pick);
-}
+// for (let pick of teas) {
+//     if(pick === "herbal tea"){
+//         continue;//skip herbal tea
+//     }
+//     preferredTeas.push(pick);
+// }
 // console.log(preferredTeas);
 
 //5]
@@ -84,7 +84,7 @@ for (const city in worldCities) {
     if (worldCities[city] < 3000000) {
         continue;
     }
-    largeCities[city] = worldCities[city];
+    largeCities[city] = worldCities[city]; //object[key] to acces value of worldCities
     
     
 }
@@ -93,4 +93,55 @@ for (const city in worldCities) {
 //7] for_each loop
 
 
+let teaTypes = ["earl tea","green tea","chai"];
+let availableTeas = [];
+teaTypes.forEach(function(tea){
+    if (tea === "chai") {
+        return; //skip only not break this keyword
+    }
+    availableTeas.push(tea);
+    
+});
+// console.log(availableTeas);
+
+//break or continue -> only for loop specific not in function looping
+
+//8]
+let cities = ["Berlin","tokyo","Sydeny","Paris"];
+let travelCities = [];
+
+cities.forEach(city => {
+    if (city === "Sydeny") {
+        return; //whole fun return if cond is true
+    }
+    travelCities.push(city)
+});
+// console.log(travelCities);
+
+//9]
+let myNumber = [2,5,7,9];
+let doubleNumbers = [];
+
+for (let l = 0; l < myNumber.length; l++) {
+    if (myNumber[l] == 7) {
+        continue;
+    }else{
+       doubleNumbers.push(myNumber[l] * 2);
+    };
+    
+};
+// console.log(doubleNumbers);
+
+//10] for_of loop
+
+let bigTeas = ["chai","green tea","black tea","jasmine tea","herbal tea"];
+let shortTeas = [];
+
+for (let tea of bigTeas) {
+    if (tea.length > 10) {
+        break;
+    }
+    shortTeas.push(tea);
+};
+console.log(shortTeas);
 
